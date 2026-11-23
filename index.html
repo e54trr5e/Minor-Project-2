@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-[#080808] text-white">
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="w-full border-b border-white/10">
+      <nav
+        class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a href="#home" class="text-2xl font-bold tracking-wider">
+          NEXORA<span class="text-blue-500">.</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#home" class="text-gray-300 hover:text-white transition"
+            >Home</a
+          >
+          <a href="#features" class="text-gray-300 hover:text-white transition"
+            >Features</a
+          >
+          <a href="#benefits" class="text-gray-300 hover:text-white transition"
+            >Benefits</a
+          >
+          <a href="#reviews" class="text-gray-300 hover:text-white transition"
+            >Reviews</a
+          >
+          <a href="#shop" class="text-gray-300 hover:text-white transition"
+            >Shop</a
+          >
+        </div>
+
+        <!-- Desktop CTA -->
+        <a
+          href="#shop"
+          class="hidden md:inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-semibold transition"
+        >
+          Get Yours
+        </a>
+
+        <!-- Mobile Navigation (No JavaScript) -->
+        <details class="relative md:hidden">
+          <summary class="list-none cursor-pointer text-2xl">☰</summary>
+
+          <div
+            class="absolute right-0 top-12 w-48 bg-[#151515] border border-white/10 rounded-xl p-5 flex flex-col gap-5 z-50 shadow-xl"
+          >
+            <a href="#home" class="hover:text-blue-400">Home</a>
+            <a href="#features" class="hover:text-blue-400">Features</a>
+            <a href="#benefits" class="hover:text-blue-400">Benefits</a>
+            <a href="#reviews" class="hover:text-blue-400">Reviews</a>
+            <a href="#shop" class="hover:text-blue-400">Shop</a>
+          </div>
+        </details>
+      </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section id="home" class="min-h-[85vh] flex items-center px-6 py-16">
+      <div
+        class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-center gap-12"
+      >
+        <!-- Hero Content -->
+        <div class="flex flex-col items-start gap-6">
+          <span
+            class="text-blue-400 bg-blue-500/10 px-4 py-2 rounded-full text-sm font-medium"
+          >
+            ✦ Introducing NEXORA X1
+          </span>
+
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            Time to
+            <span class="text-blue-500">Upgrade</span>
+            Your Life.
+          </h1>
+
+          <p class="text-gray-400 text-lg leading-relaxed max-w-lg">
+            Experience the perfect combination of technology, style and
+            performance. NEXORA X1 keeps you connected, active and ahead of your
+            time.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#shop"
+              class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-full font-semibold transition"
+            >
+              Buy Now →
+            </a>
+
+            <a
+              href="#features"
+              class="border border-white/20 hover:bg-white/10 px-8 py-4 rounded-full font-semibold transition"
+            >
+              Explore Features
+            </a>
+          </div>
+
+          <!-- Product Statistics -->
+          <div class="flex flex-wrap gap-10 mt-6">
+            <div>
+              <h3 class="text-2xl font-bold">7 Days</h3>
+              <p class="text-gray-500 text-sm">Battery Life</p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold">5 ATM</h3>
+              <p class="text-gray-500 text-sm">Water Resistant</p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold">AMOLED</h3>
+              <p class="text-gray-500 text-sm">Display</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="flex justify-center items-center">
+          <div class="relative w-full max-w-md">
+            <div
+              class="absolute inset-0 bg-blue-600/20 blur-3xl rounded-full"
+            ></div>
+
+            <img
+              src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=900&auto=format&fit=crop"
+              alt="NEXORA smartwatch"
+              class="relative w-full rounded-3xl object-cover shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES SECTION ================= -->
+
+    <section id="features" class="py-24 px-6 bg-[#101010]">
+      <div class="max-w-7xl mx-auto">
+        <!-- Section Heading -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <p
+            class="text-blue-400 uppercase tracking-widest text-sm font-semibold mb-3"
+          >
+            Powerful Technology
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-bold mb-5">
+            Features That <span class="text-blue-500">Matter</span>
+          </h2>
+
+          <p class="text-gray-400 leading-relaxed">
+            Everything you need to stay productive, healthy and connected
+            throughout your day.
+          </p>
+        </div>
+
+        <!-- Feature Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Feature 1 -->
+          <div
+            class="bg-[#181818] border border-white/10 p-8 rounded-2xl hover:border-blue-500/50 transition"
+          >
+            <div class="text-4xl mb-6">◉</div>
+
+            <h3 class="text-xl font-bold mb-3">AMOLED Display</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Enjoy vibrant colours, sharp details and crystal-clear visibility.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div
+            class="bg-[#181818] border border-white/10 p-8 rounded-2xl hover:border-blue-500/50 transition"
+          >
+            <div class="text-4xl mb-6">♥</div>
+
+            <h3 class="text-xl font-bold mb-3">Health Tracking</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Keep track of your daily activity and monitor your fitness goals.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div
+            class="bg-[#181818] border border-white/10 p-8 rounded-2xl hover:border-blue-500/50 transition"
+          >
+            <div class="text-4xl mb-6">ϟ</div>
+
+            <h3 class="text-xl font-bold mb-3">Long Battery</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Stay connected for longer with an impressive battery experience.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div
+            class="bg-[#181818] border border-white/10 p-8 rounded-2xl hover:border-blue-500/50 transition"
+          >
+            <div class="text-4xl mb-6">◈</div>
+
+            <h3 class="text-xl font-bold mb-3">Water Resistant</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Designed to accompany you through everyday adventures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BENEFITS SECTION ================= -->
+
+    <section id="benefits" class="py-24 px-6">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16"
+      >
+        <!-- Benefits Image -->
+        <div class="flex justify-center">
+          <img
+            src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=900&auto=format&fit=crop"
+            alt="Smartwatch lifestyle"
+            class="w-full max-w-lg rounded-3xl shadow-2xl"
+          />
+        </div>
+
+        <!-- Benefits Content -->
+        <div>
+          <p
+            class="text-blue-400 uppercase tracking-widest text-sm font-semibold mb-4"
+          >
+            Why Choose NEXORA?
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            Technology That
+            <span class="text-blue-500">Fits Your Life.</span>
+          </h2>
+
+          <p class="text-gray-400 leading-relaxed mb-8">
+            NEXORA X1 is designed for people who want more from their everyday
+            technology. Experience convenience, productivity and style in one
+            device.
+          </p>
+
+          <!-- Benefit List -->
+          <div class="space-y-6">
+            <div class="flex gap-4 items-start">
+              <span class="text-blue-400 text-2xl">✓</span>
+              <div>
+                <h3 class="font-bold text-lg mb-1">Stay Connected</h3>
+                <p class="text-gray-400">
+                  Access important notifications at a glance.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <span class="text-blue-400 text-2xl">✓</span>
+              <div>
+                <h3 class="font-bold text-lg mb-1">Improve Your Fitness</h3>
+                <p class="text-gray-400">
+                  Track your activities and daily fitness goals.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <span class="text-blue-400 text-2xl">✓</span>
+              <div>
+                <h3 class="font-bold text-lg mb-1">Express Your Style</h3>
+                <p class="text-gray-400">
+                  A modern design that complements your lifestyle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS SECTION ================= -->
+
+    <section id="reviews" class="py-24 px-6 bg-[#101010]">
+      <div class="max-w-7xl mx-auto">
+        <!-- Section Heading -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <p
+            class="text-blue-400 uppercase tracking-widest text-sm font-semibold mb-3"
+          >
+            Customer Feedback
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-bold mb-5">
+            What People <span class="text-blue-500">Say</span>
+          </h2>
+
+          <p class="text-gray-400">
+            Discover what customers think about the NEXORA experience.
+          </p>
+        </div>
+
+        <!-- Review Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Review 1 -->
+          <div class="bg-[#181818] border border-white/10 p-8 rounded-2xl">
+            <div class="text-yellow-400 text-xl mb-5">★★★★★</div>
+
+            <p class="text-gray-300 leading-relaxed mb-8">
+              "The design is amazing and the display looks beautiful. It has
+              become an essential part of my daily routine."
+            </p>
+
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center font-bold"
+              >
+                A
+              </div>
+
+              <div>
+                <h3 class="font-semibold">Alex Morgan</h3>
+                <p class="text-gray-500 text-sm">Customer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="bg-[#181818] border border-white/10 p-8 rounded-2xl">
+            <div class="text-yellow-400 text-xl mb-5">★★★★★</div>
+
+            <p class="text-gray-300 leading-relaxed mb-8">
+              "I love how comfortable it feels and how easily it fits into my
+              everyday lifestyle. Great overall experience."
+            </p>
+
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center font-bold"
+              >
+                S
+              </div>
+
+              <div>
+                <h3 class="font-semibold">Sarah Wilson</h3>
+                <p class="text-gray-500 text-sm">Customer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-[#181818] border border-white/10 p-8 rounded-2xl">
+            <div class="text-yellow-400 text-xl mb-5">★★★★★</div>
+
+            <p class="text-gray-300 leading-relaxed mb-8">
+              "A stylish smartwatch with useful features. I really appreciate
+              its clean design and convenient functionality."
+            </p>
+
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center font-bold"
+              >
+                J
+              </div>
+
+              <div>
+                <h3 class="font-semibold">James Carter</h3>
+                <p class="text-gray-500 text-sm">Customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRICING / CTA SECTION ================= -->
+
+    <section id="shop" class="py-24 px-6">
+      <div class="max-w-5xl mx-auto">
+        <div
+          class="bg-gradient-to-br from-blue-900/50 to-[#111111] border border-blue-500/20 rounded-3xl p-10 md:p-16 text-center"
+        >
+          <p
+            class="text-blue-400 uppercase tracking-widest text-sm font-semibold mb-4"
+          >
+            Your Next Upgrade
+          </p>
+
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Meet Your New
+            <span class="text-blue-400">Smart Companion.</span>
+          </h2>
+
+          <p class="text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
+            Experience the next level of everyday technology with NEXORA X1. Get
+            premium design and powerful features in one smartwatch.
+          </p>
+
+          <div class="mb-8">
+            <p class="text-gray-400 text-sm mb-2">Starting at</p>
+
+            <h3 class="text-5xl font-bold">₹4,999</h3>
+
+            <p class="text-gray-500 text-sm mt-2">One-time purchase</p>
+          </div>
+
+          <a
+            href="mailto:support@nexora.example?subject=NEXORA%20X1%20Enquiry"
+            class="inline-block bg-blue-600 hover:bg-blue-700 px-10 py-4 rounded-full font-bold transition"
+          >
+            Get Your NEXORA X1 →
+          </a>
+
+          <p class="text-gray-500 text-sm mt-5">
+            Designed for your everyday lifestyle.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-[#101010] border-t border-white/10 px-6 pt-16 pb-8">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
+        >
+          <!-- Brand Information -->
+          <div>
+            <a href="#home" class="text-2xl font-bold tracking-wider">
+              NEXORA<span class="text-blue-500">.</span>
+            </a>
+
+            <p class="text-gray-400 mt-5 leading-relaxed">
+              Redefining everyday technology through innovation, performance and
+              style.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="font-bold text-lg mb-5">Quick Links</h3>
+
+            <div class="flex flex-col gap-3 text-gray-400">
+              <a href="#home" class="hover:text-white">Home</a>
+              <a href="#features" class="hover:text-white">Features</a>
+              <a href="#benefits" class="hover:text-white">Benefits</a>
+              <a href="#reviews" class="hover:text-white">Reviews</a>
+            </div>
+          </div>
+
+          <!-- Product Links -->
+          <div>
+            <h3 class="font-bold text-lg mb-5">Products</h3>
+
+            <div class="flex flex-col gap-3 text-gray-400">
+              <a href="#shop" class="hover:text-white">NEXORA X1</a>
+              <a href="#features" class="hover:text-white">Specifications</a>
+              <a href="#shop" class="hover:text-white">Pricing</a>
+            </div>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="font-bold text-lg mb-5">Contact Us</h3>
+
+            <div class="flex flex-col gap-3 text-gray-400">
+              <p>Email: support@nexora.example</p>
+              <p>Customer Support</p>
+              <p>India</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div
+          class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-5"
+        >
+          <p class="text-gray-500 text-sm text-center">
+            © 2026 NEXORA. All Rights Reserved.
+          </p>
+
+          <div class="flex gap-6 text-gray-400 text-sm">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-white"
+              >Instagram</a
+            >
+
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-white"
+              >Facebook</a
+            >
+
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-white"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  >
+</html>
